@@ -1,0 +1,10 @@
+services:
+  dockware:
+    image: dockware/dev:latest
+    container_name: dockware
+    ports:
+      - 80:80
+    environment:
+      - XDEBUG_ENABLED=1
+    volumes:
+      - ./src/custom/plugins:/var/www/html/custom/plugins

@@ -1,0 +1,28 @@
+# dockware/dev starting template
+
+just a quick template to get started with dockware development
+
+## Initial Setup
+```bash
+git clone git@github.com:emmathepossum/dockware.git
+cd dockware
+docker compose up -d
+docker cp dockware:/var/www/html src
+```
+
+
+## Repeated Setup
+```bash
+docker compose up -d
+```
+
+
+## Connect to Container
+```bash
+docker exec -it dockware bash
+```
+
+
+see documentation:
+- [dockware/dev](https://github.com/dockware/dockware/tree/master/.dist/versions/master/dev/latest)
+- [Shopware Plugin Base Guide](https://developer.shopware.com/docs/guides/plugins/plugins/plugin-base-guide.html)
